@@ -14,7 +14,10 @@ Prix:{
 Numero:{
     type:Number,
     required:true,
-}
+},
+Auteurs :
+    [{type:mongoose.Schema.Types.ObjectId,ref:"Auteur"}]
+
 
 });
 module.exports= mongoose.model("Livre",Livre);

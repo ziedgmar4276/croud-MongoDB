@@ -17,6 +17,9 @@ Numero:{
     type:Number,
     required:true,
 },
+livres:[{type:mongoose.Schema.Types.ObjectId,
+ref:'Livre'}]
+
 
 });
 module.exports= mongoose.model("Auteur",Auteur)
