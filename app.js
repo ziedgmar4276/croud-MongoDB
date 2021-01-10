@@ -64,7 +64,6 @@ app.post("/api/livre/", async (req, res)  =>{
         Prix:req.body.Prix,
         Numero:req.body.Numero,
         Auteurs:req.body.Auteurs
-    
     });
      newLivre.save().then(req=>{
       if(req){
